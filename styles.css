@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "jetbrains";
+    src: url("./fonts/JetBrainsMono-Italic.ttf");
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "jetbrains";
+    src: url("./fonts/JetBrainsMono.ttf");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    font-family: "jetbrains", sans-serif;
+    font-variation-settings: "wght" 350;
+    padding: 20px;
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: stretch;
+    grid-gap: 8px;
+}
+
+@media scren and (min-width: "1200px") {
+    body {
+        max-width: 1440px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "space-grotesk-variable", sans-serif;
+  font-variation-settings: 'wght' 675;
+}
+
+.sidebar {
+    border-right: 2px solid #eee;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "calvinkoepke-blog",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
