@@ -7,15 +7,18 @@
 
 import { StrictMode } from "react";
 import { createRoot, type Root } from "react-dom/client";
-import { App } from "./app";
 import "normalize.css";
 import "./index.css";
-
+import { Sidebar } from "./components/Sidebar";
+import { Footer } from "./components/Footer";
+import { Content } from "./components/Content";
 
 const elem = document.getElementById("root")!;
 const app = (
   <StrictMode>
-    <App />
+    <Sidebar />
+    <Content />
+    <Footer />
   </StrictMode>
 );
 
