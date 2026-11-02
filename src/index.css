@@ -15,20 +15,27 @@
 body {
     font-family: "jetbrains", sans-serif;
     font-variation-settings: "wght" 350;
-    padding: 20px;
     max-width: 1040px;
     width: 100%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 25% 75%;
     align-items: stretch;
     grid-gap: 8px;
+    min-height: 100vh;
 }
 
-@media scren and (min-width: "1200px") {
-    body {
-        max-width: 1440px;
-    }
+a {
+    font-variation-settings: "wght" 400;
+    color: #0A1538;
+}
+
+a:hover,
+a:focus {
+    color: #2457F2
+}
+
+li {
+    line-height: 1.5;
 }
 
 h1,
@@ -38,9 +45,36 @@ h4,
 h5,
 h6 {
   font-family: "space-grotesk-variable", sans-serif;
-  font-variation-settings: 'wght' 675;
+  font-variation-settings: 'wght' 675; 
+}
+
+hr {
+    border: 0;
+    border-bottom: 2px solid #eee;
+    margin: 16px 0;
+    display: block;
 }
 
 .sidebar {
+    padding: 16px;
     border-right: 2px solid #eee;
+}
+
+.sidebar h1 {
+    line-height: 1;
+    margin-top: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.nav ul li {
+    line-height: 2;
+}
+
+.nav a:hover {
+    font-weight: 700;
 }
